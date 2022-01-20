@@ -1,0 +1,11 @@
+clear all;
+close all;
+clc;
+
+t = 0:.001:5;
+
+f=1;
+
+y = exp(j*2*pi*f*t); plot3(real(y),imag(y),t) xlabel('Real') ylabel('Imaginary') zlabel('time') title('Complex Exponential Signal') %plot(t,imag(y))
+
+grid on;
